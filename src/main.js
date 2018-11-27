@@ -3,7 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import elementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/css/index.css'
+import myHttpServer from '@/plugins/http.js'
 
+Vue.use(elementUI)
+Vue.use(myHttpServer)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
